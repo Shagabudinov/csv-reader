@@ -1,0 +1,1 @@
+export const incorrectFileTypeError = "Неправильный формат файла, разрешены только файлы .CSV"

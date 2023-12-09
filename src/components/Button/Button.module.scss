@@ -1,0 +1,41 @@
+@import "../../index.scss";
+
+label {
+    @include flex-position-center();
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    color: $color-white;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+    display: none;
+}
+
+.ButtonContainer {
+    @include flex-position-center();
+    flex-shrink: 0;
+    background-color: $color-default;
+    width: 274px;
+    height: 48px;
+    border-radius: 5px;
+}
+
+.ButtonContainer {
+    background-color: $color-default;
+}
+
+.ButtonContainer:hover {
+    cursor: pointer;
+    background-color: $color-hover;
+}
+
+.ButtonContainer:active {
+    background-color: $color-active;
+}

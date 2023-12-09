@@ -1,0 +1,52 @@
+@import '../../index.scss';
+
+.tableContainer {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.buttonWrapper {
+    text-align: right;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: $color-white;
+    border-radius: 10px 0px 0px 0px;
+}
+
+th {
+    border: 1px solid #ddd;
+    border-bottom: 2px solid #767676;
+    padding: 8px 60px 8px 20px;
+    text-align: left;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px 60px 8px 20px;
+    font-family: Noto Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.04s ease;
+}
+
+.trRows:hover {
+    background-color: $color-hover;
+}
+
